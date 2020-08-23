@@ -1,32 +1,23 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
+    <b-navbar>
+      <template slot="brand">
+        <b-navbar-item>
+          <div class="is-size-3">BBall Player Search</div>
+        </b-navbar-item>
+      </template>
+      <template slot="start"></template>
+
+      <template slot="end">
+        <div class="buttons">
+          <a href="https://www.balldontlie.io/#introduction" target="_blank">
+            <b-button class="is-primary">balldontlie API</b-button>
+          </a>
+        </div>
+      </template>
+    </b-navbar>
     <router-view />
   </div>
 </template>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
-
-#nav {
-  padding: 30px;
-}
-
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-
-#nav a.router-link-exact-active {
-  color: #42b983;
-}
-</style>
+<style></style>
